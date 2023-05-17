@@ -1,0 +1,53 @@
+.formBlock{
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 90% 10%;
+    margin-top: 1.5em;
+}
+.loading{
+    padding-bottom: 1.8em;
+}
+.formBlock input{
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.formBlock input:focus{
+    outline: none;
+}
+.formBlock input::placeholder{
+    font-size: 1rem;
+}
+.formBlock button{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 17%);
+    background-image: url(../../../images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.formBlock button:focus{
+    outline: none;
+}
+@media screen and (max-width:450px) {
+    .formBlock{
+        grid-template-columns: 85% 15%;
+    }   
+    .formBlock input::placeholder{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .formBlock input::placeholder{
+        font-size: 0.8rem;
+    }
+}
+@media(hover: hover){
+    .formBlock button:hover{
+        opacity: 1;
+    }
+}

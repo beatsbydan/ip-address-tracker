@@ -1,0 +1,57 @@
+.location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 2em 3%;
+    background-color: white;
+    position: relative;
+    transform: translateY(50%);
+    border-radius: 0.9rem;
+    bottom: 0;
+    z-index: 1000;
+}
+.location div div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+}
+.location div small{
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 59%);
+    font-weight: 700;
+}
+.location div h3{
+    font-weight: 500;
+}
+.line{
+    width: 0.5px;
+    height: 10vh;
+    background-color: hsl(0, 0%, 59%);
+}
+.exactLocation,.timeZone,.isp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.7rem;
+}
+@media screen and (max-width:850px){
+    .location{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1em;
+        margin-top: -5.5em;
+    }
+    .line{
+        display: none;
+    }
+    .location div div{
+        align-items: center;
+    }
+}
