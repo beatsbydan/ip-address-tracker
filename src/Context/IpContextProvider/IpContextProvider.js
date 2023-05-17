@@ -16,6 +16,7 @@ const IpContextProvider = (props) => {
             setIpData(ip)
             setIsLoading(false)
         }
+        setIpAddress("")
     }
     useEffect(()=>{
         const defaultFetch = async () => {

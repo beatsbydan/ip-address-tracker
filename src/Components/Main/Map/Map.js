@@ -1,11 +1,10 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import './Map.css'
 import 'leaflet/dist/leaflet.css'
-import {MdLocationPin} from 'react-icons/md' 
 import { useContext } from "react";
 import IpContext from "../../../Context/IpContext/IpContext";
 import MoveToView from "./MoveToView/MoveToView";
-import { Icon, DivIcon } from "leaflet";
+import { Icon } from "leaflet";
 
 const Map = () => {
     const myMarker = new Icon({
