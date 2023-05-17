@@ -11,15 +11,15 @@ const IpContextProvider = (props) => {
     }
     const useFetch = async () => {
         setIsLoading(true)
-        const ip = await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=at_ngkqCdkexQez6x9kZryCqnWyOc5uk&ipAddress=${ipAddress}`)
-        if(ip){
+        const ip = await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=at_f7g1RhfNsj8YRPnkPYx760rv4hYBH&ipAddress=${ipAddress}`)
+            if(ip){
             setIpData(ip)
             setIsLoading(false)
         }
     }
     useEffect(()=>{
         const defaultFetch = async () => {
-            const ip = await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=at_ngkqCdkexQez6x9kZryCqnWyOc5uk&ipAddress=${ipAddress}`)
+            const ip = await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=at_f7g1RhfNsj8YRPnkPYx760rv4hYBH&ipAddress=${ipAddress}`)
             if(ip){
                 setIpData(ip)
                 setIsLoading(false)
